@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+<title>Inventory</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="author" content="Gabriel Tar" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex" />
+<link href="css/default.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<div id="loot">
+<h2>Loot</h2>
+<ul></ul>
+</div>
+
+<div id="info">
+<h2>The Inventory</h2>
+<p>This demo suggests a possible solution to, what I consider to be flaws of,
+the inventory systems of early Diablo and World of Warcraft games.</p>
+<p>Here, seemingly identical items in the inventory represent unique ones in
+order to show the functionality, else they could be stacked.</p>
+<h3>Addressed issues</h3>
+<ul>
+<li>Not being able to pick up items due to shape limitations</li>
+<li>Being able to carry too large and/or heavy items</li>
+</ul>
+<h3>Usage</h3>
+<ul>
+<li>Hover the icon of an item to display information about it</li>
+<li>(Shift-)Click an item in the loot frame to add a copy to the inventory</li>
+<li>Drag and drop inventory items to other inventory slots or to the trash</li>
+<li>Ctrl-click an inventory item to delete it</li>
+<li>The inventory has a max height but can be scrolled past it using the mouse
+or scroll buttons</li>
+</ul>
+</div>
+
+<div id="inventory">
+<header>
+<h2>Inventory</h2>
+<div>
+<img id="scroll-up" class="hidden" src="images/chevron-up.svg" alt="Scroll up" />
+<img id="scroll-down" class="hidden" src="images/chevron-down.svg" alt="Scroll down" />
+</div>
+</header>
+<ul></ul>
+<div class="stats">
+<div class="volume" data-volume="0"></div><div class="mass" data-mass="0"></div>
+</div>
+</div>
+
+<img id="trash" src="images/trash-can.svg" alt="Trash" draggable="false" />
+
+<div id="tooltip" class="hidden">
+<h3></h3>
+<p></p>
+<div class="stats"><div class="volume"></div><div class="mass"></div></div>
+</div>
+
+<script src="js/core.js"></script>
+
+</body>
+
+</html>
